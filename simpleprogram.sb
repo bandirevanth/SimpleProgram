@@ -1,0 +1,39 @@
+' A simple SmallBasic Program - v1.0
+' Author - Bandi Revanth - 21/01-2022
+
+' Color properties of TextWindow
+TextWindow.BackgroundColor = "Orange"
+TextWindow.ForegroundColor = "Black"
+
+TextWindow.WriteLine("Hi! Which school do you study in?")
+
+SchoolName = TextWindow.Read()
+
+TextWindow.WriteLine("Okay.")
+
+TextWindow.WriteLine("Which standard do you study in?")
+
+StandardName = TextWindow.Read()
+
+TextWindow.WriteLine("Great.")
+
+TextWindow.ForegroundColor = "Blue"
+
+TextWindow.WriteLine("Now I'll ask you a question, are you ready?")
+
+QuestionResponse1 = TextWindow.Read()
+
+TextWindow.WriteLine("Ok then. The question is - What is the full form of REPL?")
+
+QuestionResponse2 = TextWindow.Read()
+
+' Conditional Statement
+If (QuestionResponse2 = "Read Evaluate Print Loop") Then
+    TextWindow.WriteLine("Correct! Well Done!")
+Else
+    TextWindow.WriteLine("Wrong! Try again")
+EndIf
+
+TextWindow.ForegroundColor = "White"
+
+TextWindow.WriteLine("Bye!")
